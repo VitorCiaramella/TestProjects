@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UfS-lI-ueK" userLabel="CanvasView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="533.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwU-vV-GTM">
+                                <rect key="frame" x="0.0" y="533.5" width="375" height="133.5"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TwU-vV-GTM" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="3M5-Ph-0dF"/>
+                            <constraint firstItem="UfS-lI-ueK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4te-vF-4GD"/>
+                            <constraint firstItem="TwU-vV-GTM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="95A-oo-eaT"/>
+                            <constraint firstItem="TwU-vV-GTM" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="A6p-2x-A5e"/>
+                            <constraint firstItem="UfS-lI-ueK" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.8" id="Sfr-Nt-H1o"/>
+                            <constraint firstItem="UfS-lI-ueK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="W9J-VA-fs3"/>
+                            <constraint firstItem="TwU-vV-GTM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="dEP-UR-q6g"/>
+                            <constraint firstItem="UfS-lI-ueK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="gfj-4Y-wQh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="CanvasView" destination="UfS-lI-ueK" id="Xm1-Lo-5Yi"/>
+                        <outlet property="TextView" destination="TwU-vV-GTM" id="s7c-cl-uTn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
